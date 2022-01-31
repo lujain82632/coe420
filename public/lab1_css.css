@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+.html{
+    background-color: rgb(211, 228, 205);
+}
+
+body{
+    background-color: rgb(211, 228, 205);
+}
+h1{
+  font-family: Georgia, Serif;
+  font-size: 40px;
+  text-align: center;
+  background: #99A799;
+  padding: 10px;
+  border-radius: 25px;
+}
+h2{
+  font-family: Georgia, Serif;
+  font-size: 25px;
+  text-align: center;
+}
+h3{
+  font-family: Georgia, Serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+img{
+  border-radius: 50%;
+  float: left;
+  margin-right: 2%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+ul{
+  font-family: Garamond, Serif;
+  font-size: 18px;  
+  margin-left: 2%;
+}
+p{
+  font-family: Garamond, Serif;
+  font-size: 20px;  
+  margin-left: 2%;
+}
+
+#isra{
+  background-color: rgb(226, 194, 185);
+  border-radius: 25px;
+  opacity: 0.8; 
+  float: left;
+  width: 80%;
+  margin-bottom: 1em;
+}
+#isra_link{
+	text-align: center;
+	font-size: 15px
+}
+
+#lujain{
+  background-color: rgb(226, 194, 185);
+  border-radius: 25px;
+  opacity: 0.8; 
+  float: left;
+  width: 80%;
+  margin-bottom: 1em;
+}
+#lujain_link{
+	text-align: center;
+	font-size: 15px
+}
+
+form{
+   max-width: 600px;
+   text-align: center;
+   margin: 20px auto;
+}
+#message_form{
+	height: 100px;
+}
+#submit_form{
+	cursor: pointer;
+	background: white;
+}
+footer{
+  font-family: Garamond, Serif;
+  font-size: 12px;  
+}
+
+     
+    
+
+
+
+
+
