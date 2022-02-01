@@ -1,18 +1,20 @@
 @charset "UTF-8";
 
 .html{
-    background-color: rgb(211, 228, 205);
+      background: #D3E4CD;
 }
 
 body{
-    background-color: rgb(211, 228, 205);
+}
+
+#title{
+  padding: 30px;
+	
 }
 h1{
   font-family: Georgia, Serif;
   font-size: 40px;
   text-align: center;
-  background: #99A799;
-  padding: 10px;
   border-radius: 25px;
 }
 h2{
@@ -28,10 +30,18 @@ h3{
 
 img{
   border-radius: 50%;
-  float: left;
   margin-right: 2%;
   margin-top: 2%;
   margin-bottom: 1%;
+}
+img:hover{
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  
+  box-shadow: 10px 10px 10px #99A799;
 }
 ul{
   font-family: Garamond, Serif;
@@ -56,6 +66,12 @@ p{
 	text-align: center;
 	font-size: 15px
 }
+#isra_img{
+  float: left;
+  margin-right: 2%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
 
 #lujain{
   background-color: rgb(226, 194, 185);
@@ -69,12 +85,29 @@ p{
 	text-align: center;
 	font-size: 15px
 }
+#lujain_img{
+  float: right;
+  margin-right: 2%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
 
 form{
    max-width: 600px;
    text-align: center;
    margin: 20px auto;
 }
+input[type=text],[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
 #message_form{
 	height: 100px;
 }
@@ -82,6 +115,7 @@ form{
 	cursor: pointer;
 	background: white;
 }
+
 footer{
   font-family: Garamond, Serif;
   font-size: 12px;  
