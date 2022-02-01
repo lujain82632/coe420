@@ -2,6 +2,7 @@
 
 .html{
       background: #D3E4CD;
+      
 }
 
 body{
@@ -9,13 +10,20 @@ body{
 
 #title{
   padding: 40px;
-	
+  background: #D3E4CD;
+  background-image: url(marble.jpeg);
+  margin-bottom: 4%;
+  border-radius: 25px;
 }
 h1{
   font-family: Georgia, Serif;
   font-size: 40px;
   text-align: center;
   border-radius: 25px;
+  padding:10px;
+  opacity:1;
+  text-shadow: 0 0 5px #D3E4CD;
+  -webkit-text-stroke: 1px white;
 }
 h2{
   font-family: Georgia, Serif;
@@ -52,6 +60,7 @@ p{
   font-family: Garamond, Serif;
   font-size: 20px;  
   margin-left: 2%;
+  opacity:1;
 }
 
 #isra{
@@ -61,6 +70,24 @@ p{
   float: left;
   width: 80%;
   margin-bottom: 1em;
+}
+#isra:hover{
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  
+  box-shadow: 10px 10px 10px #99A799;
+}
+#lujain:hover{
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  
+  box-shadow: 10px 10px 10px #99A799;
 }
 #isra_link{
 	text-align: center;
@@ -79,7 +106,8 @@ p{
   opacity: 0.8; 
   float: left;
   width: 80%;
-  margin-bottom: 1em;
+  margin-bottom: 30px;
+ 
 }
 #lujain_link{
 	text-align: center;
@@ -95,7 +123,10 @@ p{
 form{
    max-width: 600px;
    text-align: center;
+   
    margin: 20px auto;
+   
+   
 }
 input[type=text],[type=email], textarea {
   width: 100%;
@@ -111,14 +142,23 @@ input[type=text],[type=email], textarea {
 #message_form{
 	height: 100px;
 }
-#submit_form{
-	cursor: pointer;
-	background: white;
+input[type=submit] {
+  background-color: rgb(226, 194, 185);
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; 
+}
+input[type=submit]:hover {
+  background-color: #99A799;
 }
 
 footer{
   font-family: Garamond, Serif;
-  font-size: 12px;  
+  font-size: 15px;  
+  text-align:right;
+  
 }
 
      
