@@ -102,7 +102,11 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
-.jumbtron_container {
+.jumbotron {
+ background-color: #FFEDDB !important; 
+ 
+ text-align: center;
+
 }
 
 footer{
@@ -114,8 +118,19 @@ footer{
 .card {
 	float: left;
 	margin: 30px 10px 10px 10px;
+	background-color: #d1be9d !important;
+	
 }
-    
+.rec{
+	font-family: Georgia, Serif;
+  color: white;
+}
+.author{
+	font-family: Georgia, Serif;
+  color: white;
+	
+}
+
 
 
 
