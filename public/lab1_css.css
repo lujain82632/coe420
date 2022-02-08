@@ -1,40 +1,44 @@
 @charset "UTF-8";
 
 .html{
-      background: white;     
 }
 
 body{
 }
 
-#title{
-  padding: 40px;
-  margin-bottom: 4%;
-  border-radius: 25px;
-}
-
 h1{
   font-family: Georgia, Serif;
-  font-size: 40px;
-  text-align: center;
-  border-radius: 25px;
-  padding:10px;
-  opacity:1;
+  color: black;
 }
 
 h2{
   font-family: Georgia, Serif;
-  font-size: 25px;
-  text-align: center;
+  color: black;
 }
 
 h3{
   font-family: Georgia, Serif;
-  font-size: 25px;
-  text-align: center;
+  color: black;
 }
 
-#img_isra:hover{
+ul{
+  font-family: Garamond, Serif;
+  color: black;
+}
+
+p{
+  font-family: Garamond, Serif;
+  color: black;
+}
+
+#personal_img{
+  float: left;
+  margin-right: 2%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+#personal_img:hover{
   border-radius: 50%;
   margin-right: 2%;
   margin-top: 2%;
@@ -47,29 +51,7 @@ h3{
   box-shadow: 10px 10px 10px #99A799;
 }
 
-ul{
-  font-family: Garamond, Serif;
-  font-size: 18px;  
-  margin-left: 2%;
-}
-
-p{
-  font-family: Garamond, Serif;
-  font-size: 20px;  
-  margin-left: 2%;
-  opacity:1;
-}
-
-#isra{
-  background-color: rgb(226, 194, 185);
-  border-radius: 25px;
-  opacity: 0.8; 
-  float: left;
-  width: 80%;
-  margin-bottom: 1em;
-}
-
-#isra:hover{
+#temp:hover{
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
@@ -78,46 +60,9 @@ p{
   box-shadow: 10px 10px 10px #99A799;
 }
 
-#lujain:hover{
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
-  box-shadow: 10px 10px 10px #99A799;
-}
-
-#isra_link{
+#link{
 	text-align: center;
 	font-size: 15px
-}
-
-#isra_img{
-  float: left;
-  margin-right: 2%;
-  margin-top: 2%;
-  margin-bottom: 1%;
-}
-
-#lujain{
-  background-color: rgb(226, 194, 185);
-  border-radius: 25px;
-  opacity: 0.8; 
-  float: left;
-  width: 80%;
-  margin-bottom: 30px;
-}
-
-#lujain_link{
-	text-align: center;
-	font-size: 15px
-}
-
-#lujain_img{
-  float: right;
-  margin-right: 2%;
-  margin-top: 2%;
-  margin-bottom: 1%;
 }
 
 form{
@@ -150,7 +95,11 @@ input[type=submit]:hover {
   background-color: #c0c0c0;
 }
 
-.container {
+.carousel-item{
+	height: 400px;
+}
+
+.form_container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
@@ -161,16 +110,6 @@ footer{
   font-size: 15px;  
   text-align:right;  
 }
-
-.container{
-	background-color: rgb(226, 194, 185);
-	background-size: cover;	
-}
-
-.carousel-item{
-	height: 400px;
-}
-
      
     
 
