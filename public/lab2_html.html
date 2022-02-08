@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-</head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Author Attic</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="lab1_html.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="lab2_html.html">Contact Us</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<div id="form1">
-
-	<form>
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width">
+	    <link href="lab1_css.css" rel="stylesheet" type="text/css" />
+		<title>Author's Attic</title>
+		
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+	</head>
 	
-	<h3>Contact Isra and Lujain</h3>
-	  <div id="div_form">
-	    <input type="text"  placeholder="Full name" required><br>
-	    <input type="email" placeholder="Email address" required><br>
-	    <input type="text"  placeholder="Subject" required><br>
-	    <input type="text"  placeholder="Message" id="message_form" required><br>
-	  </div>  
-	  
-	  <input type="submit" value="Submit" id="submit_form"><br>
-	</form>
-	</div>
-	
-     
-
-</body>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="#">Author's Attic</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="lab1_html.html">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="lab2_html.html">Contact Us</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+		
+		<div class="jumbotron jumbotron-fluid">
+		  <div class="jumbotron_container">
+		    <h1 class="display-4">Fluid jumbotron</h1>
+		    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+		  </div>
+		</div>
+		
+		<div class="form_container">
+		  <form action="action_page.php">
+		
+			<input type="text"  placeholder="Full name" required><br>
+			<input type="email" placeholder="Email address" required><br>
+			<input type="text"  placeholder="Subject" required><br>
+			<textarea name="message" placeholder="Message" style="height:200px"></textarea>
+		    <input type="submit" value="Submit">
+		  </form>
+		</div>
+	</body>
 </html>

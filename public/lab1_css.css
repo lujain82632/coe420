@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .html{
-      background: #D3E4CD;     
+      background: white;     
 }
 
 body{
@@ -9,11 +9,10 @@ body{
 
 #title{
   padding: 40px;
-  background: #D3E4CD;
-  background-image: url(marble.jpeg);
   margin-bottom: 4%;
   border-radius: 25px;
 }
+
 h1{
   font-family: Georgia, Serif;
   font-size: 40px;
@@ -21,14 +20,14 @@ h1{
   border-radius: 25px;
   padding:10px;
   opacity:1;
-  text-shadow: 0 0 5px #D3E4CD;
-  -webkit-text-stroke: 1px white;
 }
+
 h2{
   font-family: Georgia, Serif;
   font-size: 25px;
   text-align: center;
 }
+
 h3{
   font-family: Georgia, Serif;
   font-size: 25px;
@@ -45,14 +44,15 @@ h3{
   -moz-transition:.5s;
   -webkit-transition:.5s;
   transition:.5s;
-  
   box-shadow: 10px 10px 10px #99A799;
 }
+
 ul{
   font-family: Garamond, Serif;
   font-size: 18px;  
   margin-left: 2%;
 }
+
 p{
   font-family: Garamond, Serif;
   font-size: 20px;  
@@ -68,28 +68,30 @@ p{
   width: 80%;
   margin-bottom: 1em;
 }
+
 #isra:hover{
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
   -webkit-transition:.5s;
   transition:.5s;
-  
   box-shadow: 10px 10px 10px #99A799;
 }
+
 #lujain:hover{
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
   -webkit-transition:.5s;
   transition:.5s;
-  
   box-shadow: 10px 10px 10px #99A799;
 }
+
 #isra_link{
 	text-align: center;
 	font-size: 15px
 }
+
 #isra_img{
   float: left;
   margin-right: 2%;
@@ -104,12 +106,13 @@ p{
   float: left;
   width: 80%;
   margin-bottom: 30px;
- 
 }
+
 #lujain_link{
 	text-align: center;
 	font-size: 15px
 }
+
 #lujain_img{
   float: right;
   margin-right: 2%;
@@ -120,47 +123,52 @@ p{
 form{
    max-width: 600px;
    text-align: center;
-   
    margin: 20px auto;
-   
-   
-}
-input[type=text],[type=email], textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
 }
 
-#message_form{
-	height: 100px;
+input[type=text], [type=email], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px;
+  resize: vertical 
 }
+
 input[type=submit] {
   background-color: rgb(226, 194, 185);
-  color: black;
+  color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
-  cursor: pointer; 
+  cursor: pointer;
 }
+
 input[type=submit]:hover {
-  background-color: #99A799;
+  background-color: #c0c0c0;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
 footer{
   font-family: Garamond, Serif;
   font-size: 15px;  
-  text-align:right;
-  
+  text-align:right;  
 }
+
 .container{
 	background-color: rgb(226, 194, 185);
-	background-size: cover;
-	
+	background-size: cover;	
+}
+
+.carousel-item{
+	height: 400px;
 }
 
      
