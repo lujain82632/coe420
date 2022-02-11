@@ -109,7 +109,7 @@ input[type=submit]:hover {
 
 }
 
-footer{
+.footer{
   font-family: Garamond, Serif;
   font-size: 15px;  
   text-align:right;  
@@ -130,8 +130,15 @@ footer{
   color: white;
 	
 }
-
-
+.darkMode{
+	background-color: black;
+	color: white;
+	
+}
+.btn btn-secondary{
+	float: right;
+	    text-align: right;
+}
 
 
 
