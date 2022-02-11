@@ -12,43 +12,42 @@
 	</head>
 	
 	<body>
-		<body>
-	  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-	  <a class="navbar-brand" href="#">Author's Attic</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="navbarNav">
-	    <ul class="navbar-nav">
-	      <li class="nav-item active">
-	        <a class="nav-link" href="HomePage_html.html">Home <span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="form_html.html">Contact Us</a>
-	      </li>
-	      <li class="button_class">
-		   	<div class="btn-group" role="group" aria-label="Basic example" id="button_placement">
-			    <button class="btn btn-secondary" onclick="increaseSize()" >Increase Font Size</button>
-		        <button class="btn btn-secondary" onclick="resetSize()">Reset Font Size</button>
-		        <button class="btn btn-secondary" onclick="fontType()">Change Font Type</button>
-		        <button class="btn btn-secondary" onclick="darkMode()">Dark mode</button>
-	        </div>
-	      </li>
-	    </ul>
-	  </div>
-	</nav>
+		<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+		  <h2><a class="navbar-brand" href="#">Author's Attic</a></h2>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav">
+		      <li class="nav-item">
+		        <a class="nav-link" href="HomePage_html.html">Home</a>
+		      </li>
+		      <li class="nav-item active">
+		        <a class="nav-link" href="form_html.html">Contact Us<span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="button_class">
+			   	<div class="btn-group" role="group" aria-label="Basic example" id="button_placement">
+				    <button class="btn btn-secondary" onclick="increaseSize()" >Increase Font Size</button>
+			        <button class="btn btn-secondary" onclick="resetSize()">Reset Font Size</button>
+			        <button class="btn btn-secondary" onclick="fontType()">Change Font Type</button>
+			        <button class="btn btn-secondary" onclick="darkMode()">Dark mode</button>
+		        </div>
+		      </li>
+		    </ul>
+		  </div>
+	  	</nav>
 		
-		<div class="jumbotron">
-		  <h1 class="display-4">Contact us!</h1>
+		<div class="jumbotron" style="background-image: url(books.jpg); background-size: cover; color: white;"><center>
+		  <h1 class="display-4">Reach out to us!</h1>
 		  <p class="lead">Still not sure where to start? Contact Isra and Lujain for any questions on where to find your next read.</p>
 		  <hr class="my-4">
-		</div>
+		</center></div>
 		
 		<div class="alert alert-info" role="alert">
 		  Please note that all the fields in this form are required.
 		</div>
 		
-		<div class="form_container">
+		<div class="contact-form-container">
 		  <form action="action_page.php">		
 			<input type="text"  placeholder="Full name" required><br>
 			<input type="email" placeholder="Email address" required><br>

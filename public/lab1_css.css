@@ -1,73 +1,49 @@
 @charset "UTF-8";
 
+.html{
+  background-color: #DFD3C3;
+}
+
 body{
-}
-
-h1{
   font-family: Georgia, Serif;
   color: black;
+  background-color: #DFD3C3;
 }
 
-h2{
+h1, h2, h3, h4, h5, ul, p, li{
   font-family: Georgia, Serif;
-  color: black;
 }
 
-h3{
-  font-family: Georgia, Serif;
-  color: black;
+.navbar-custom {
+	background-color: #A68DAD;
+}
+.navbar-brand {
+	font-weight: bold;
 }
 
-ul{
-  font-family: Garamond, Serif;
-  color: black;
+/* Carousel and Jumbotron */
+.carousel-item {
+	height: 400px;
+	background-color: #DFD3C3;
+}
+.jumbotron {
+  background-color: #F0ECE3 !important; 
+}
+.meet-jumbotron {
+  background: url(meetbooks.jpg);
+  background-size: cover;
+  height: 100%;
+}
+.link {
+  text-align: center;
 }
 
-p{
-  font-family: Garamond, Serif;
-  color: black;
+/* Contact form */
+form {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
 }
-
-#personal_img{
-  float: left;
-  margin-right: 2%;
-  margin-top: 2%;
-  margin-bottom: 1%;
-}
-
-#personal_img:hover{
-  border-radius: 50%;
-  margin-right: 2%;
-  margin-top: 2%;
-  margin-bottom: 1%;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
-  box-shadow: 10px 10px 10px #99A799;
-}
-
-#temp:hover{
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
-  box-shadow: 10px 10px 10px #99A799;
-}
-
-#link{
-	text-align: center;
-	font-size: 15px
-}
-
-form{
-   max-width: 600px;
-   text-align: center;
-   margin: 20px auto;
-}
-
 input[type=text], [type=email], select, textarea {
   width: 100%; 
   padding: 12px; 
@@ -78,66 +54,64 @@ input[type=text], [type=email], select, textarea {
   margin-bottom: 16px;
   resize: vertical 
 }
-
+input[type=checkbox]{
+	padding: 10px;
+}
 input[type=submit] {
-  background-color: rgb(226, 194, 185);
+  background-color: #A68DAD;
+  font-family: Georgia, Serif;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
-
 input[type=submit]:hover {
-  background-color: #c0c0c0;
+  background-color: #8f6f98;
+}
+.contact-form-container {
+  padding: 10px;
+  background-color: #DFD3C3;
 }
 
-.carousel-item{
-	height: 400px;
+/* cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #F0ECE3 !important;
+}
+.row {
+  padding: 30px;
+  background-color: #DFD3C3;
+}
+@media screen and (max-width: 600px) {
+  .col {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+#btn-buy-me{
+  font-family: Georgia, Serif;
+  background-color: #A68DAD;
+  border: none;
+}
+#btn-buy-me:hover{
+  background-color: #8f6f98;
 }
 
-.contact_form_container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+.darkMode{
+  background-color: black;
+  color: white;	
 }
-
-.jumbotron {
- background-color: #FFEDDB !important; 
- 
- text-align: center;
-
+.btn btn-secondary{
+  float: right;
+  text-align: right;
 }
 
 .footer{
   font-family: Garamond, Serif;
   font-size: 15px;  
   text-align:right;  
-}
-
-.card {
-	float: left;
-	margin: 30px 10px 10px 10px;
-	background-color: #d1be9d !important;
-	
-}
-.rec{
-	font-family: Georgia, Serif;
-  color: white;
-}
-.author{
-	font-family: Georgia, Serif;
-  color: white;
-	
-}
-.darkMode{
-	background-color: black;
-	color: white;
-	
-}
-.btn btn-secondary{
-	float: right;
-	    text-align: right;
 }
 
 
