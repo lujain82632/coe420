@@ -1,87 +1,90 @@
 @charset "UTF-8";
 
-.html{
-  background-color: #DFD3C3;
-}
-
-body{
+/* General */
+body {
   font-family: Georgia, Serif;
   color: black;
-  background-color: #DFD3C3;
 }
-
-h1, h2, h3, h4, h5, ul, p, li{
+h1, h2, h3, h4, h5, ul, p, li, a {
   font-family: Georgia, Serif;
 }
+.bg-color {
+  background-color: #DFD3C3;
+}
+.alert-info {
+	max-width: 600px;
+	margin: auto;
+}
 
+/* Buttons */
+#btn-custom {
+  background-color: #A68DAD;
+  border: none;
+  width: 100%
+}
+#btn-custom:hover {
+  background-color: #84708A;
+}
+#btn-group-custom {
+  background-color: #C7B198;
+  border: none;
+}
+#btn-group-custom:hover {
+  background-color: #AF9A82;
+}
+
+/* Navigation bar */
 .navbar-custom {
-	background-color: #A68DAD;
+  background-color: #A68DAD;
 }
 .navbar-brand {
-	font-weight: bold;
+  font-weight: bold;
 }
 
-/* Carousel and Jumbotron */
+/* Carousel */
 .carousel-item {
-	height: 400px;
-	background-color: #DFD3C3;
+  height: 400px;
+  background: url(meet-books.jpg);
+  background-size: cover;
 }
-.jumbotron {
-  background-color: #F0ECE3 !important; 
+#personal-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+#personal-img-hover {
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  box-shadow: 10px 10px 10px white;
+}
+
+/* Jumbotron */
+.contact-jumbotron {
+  color: white;
+  text-align: center;
+  height: 250px;
+  background: url(contact-books.jpg);
+  background-size: cover;
 }
 .meet-jumbotron {
-  background: url(meetbooks.jpg);
-  background-size: cover;
-  height: 100%;
+  color: white;
+  margin: 16px;
 }
 .link {
   text-align: center;
 }
 
-/* Contact form */
-form {
-  max-width: 600px;
-  text-align: center;
-  margin: 20px auto;
-}
-input[type=text], [type=email], select, textarea {
-  width: 100%; 
-  padding: 12px; 
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px;
-  resize: vertical 
-}
-input[type=checkbox]{
-	padding: 10px;
-}
-input[type=submit] {
-  background-color: #A68DAD;
-  font-family: Georgia, Serif;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-input[type=submit]:hover {
-  background-color: #8f6f98;
-}
-.contact-form-container {
-  padding: 10px;
-  background-color: #DFD3C3;
-}
-
-/* cards */
+/* Cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #F0ECE3 !important;
+  font-family: Garamond, Serif;
 }
-.row {
+.card-row {
   padding: 30px;
-  background-color: #DFD3C3;
 }
 @media screen and (max-width: 600px) {
   .col {
@@ -90,30 +93,30 @@ input[type=submit]:hover {
     margin-bottom: 20px;
   }
 }
-#btn-buy-me{
-  font-family: Georgia, Serif;
-  background-color: #A68DAD;
-  border: none;
-}
-#btn-buy-me:hover{
-  background-color: #8f6f98;
-}
-.btn-group{
-	text-align:  right;
-	float: right;
-}
 
+/* Contact form */
+.form-container {
+  max-width: 600px;
+  margin: 10px auto;
+  background-color: #F0ECE3;
+  padding: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-family: Garamond, Serif;
+}
 
 .darkMode{
   background-color: black;
   color: white;	
 }
 
-
-.footer{
+footer{
   font-family: Garamond, Serif;
   font-size: 15px;  
   text-align:right;  
+  padding: 10px;
+  background-color: #C7B198;
+  color: white;
 }
 
 

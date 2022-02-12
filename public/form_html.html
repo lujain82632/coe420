@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="bg-color">
 	<head>
 		<meta charset="UTF-8">
 	    <meta name="viewport" content="width=device-width">
@@ -11,68 +11,82 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 	</head>
 	
-	<body>
-		<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+	<body class="bg-color">
+	  <!-- Navigation bar -->
+	  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
 		  <h2><a class="navbar-brand" href="#">Author's Attic</a></h2>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
+		  
 		  <div class="collapse navbar-collapse" id="navbarNav">
 		    <ul class="navbar-nav">
 		      <li class="nav-item">
 		        <a class="nav-link" href="HomePage_html.html">Home</a>
 		      </li>
 		      <li class="nav-item active">
-		        <a class="nav-link" href="form_html.html">Contact Us<span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="button_class">
-			   	<div class="btn-group" role="group" aria-label="Basic example" id="button_placement">
-				    <button class="btn btn-secondary" onclick="increaseSize()" >Increase Font Size</button>
-			        <button class="btn btn-secondary" onclick="resetSize()">Reset Font Size</button>
-			        <button class="btn btn-secondary" onclick="fontType()">Change Font Type</button>
-			        <button class="btn btn-secondary" onclick="darkMode()">Dark mode</button>
-		        </div>
+		        <a class="nav-link" href="form_html.html">Contact<span class="sr-only">(current)</span></a>
 		      </li>
 		    </ul>
 		  </div>
-	  	</nav>
+		    
+		  <ul class="nav justify-content-end">
+		   	<li class="nav-item"><div class="btn-group" role="group" aria-label="Basic example">
+			    <button class="btn btn-secondary" id="btn-group-custom" onclick="increaseSize()">Increase Font Size</button>
+		        <button class="btn btn-secondary" id="btn-group-custom" onclick="resetSize()">Reset Font Size</button>
+		        <button class="btn btn-secondary" id="btn-group-custom" onclick="fontType()">Change Font Type</button>
+		        <button class="btn btn-secondary" id="btn-group-custom" onclick="darkMode()">Dark mode</button>
+		       </div></li>
+		    </li>
+		  </ul>
+	  </nav>
 		
-		<div class="jumbotron" style="background-image: url(books.jpg); background-size: cover; color: white;"><center>
+		<!-- Jumbotron -->
+		<div class="jumbotron jumbotron-fluid contact-jumbotron">
 		  <h1 class="display-4">Reach out to us!</h1>
 		  <p class="lead">Still not sure where to start? Contact Isra and Lujain for any questions on where to find your next read.</p>
 		  <hr class="my-4">
-		</center></div>
+		</div>
 		
 		<div class="alert alert-info" role="alert">
-		  Please note that all the fields in this form are required.
+		  <center> Please note that all the fields in this form are required. </center>
 		</div>
 		
-		<div class="contact-form-container">
-		  <form action="action_page.php">		
-			<input type="text"  placeholder="Full name" required><br>
-			<input type="email" placeholder="Email address" required><br>
-			<input type="text"  placeholder="Subject" required><br>
-			<textarea name="message" placeholder="Message" style="height:200px" required></textarea>
-			<div class="form-check">
-			  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-			  <label class="form-check-label" for="defaultCheck1">
-			    I am not a robot.
-			  </label>
-			</div>
-		    <input type="submit" onclick="confirmBox()" value="Submit">
-		    <script>
-		    function confirmBox(){
-				 var text;
-				 if(submit("Do you want to continue?")){
-					text="You pressed Ok";
+		<!-- Contact form -->
+		<div class="form-container"><form action="action_page.php">
+		  <div class="row form-group">
+		    <div class="col"><input type="text" class="form-control" placeholder="First name" required></div>
+		    <div class="col"><input type="text" class="form-control" placeholder="Last name" required></div>
+		  </div>
+		  
+		  <div class="form-group">
+		    <input type="email" class="form-control" placeholder="Email address" required>
+		    <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+		  </div>
+		  
+		  <div class="form-group"><input type="text" class="form-control" placeholder="Subject" required></div>
+		  <div class="form-group"><textarea class="form-control" placeholder="Message" rows="3" required></textarea></div>
+		  
+		  <div class="form-group form-check">
+		    <input type="checkbox" class="form-check-input" required>
+		    <label class="form-check-label">I am not a robot</label>
+		  </div>
+		  
+		  <div class="form-group">
+		  	<button type="submit" class="btn btn-primary" id="btn-custom" onclick="confirmBox()" value="Submit">Submit</button>
+		  	<script>
+			    function confirmBox(){
+					 var text;
+					 if(submit("Do you want to continue?")){
+						text="You pressed Ok";
+						}
+					else{
+						text="You pressed cancel"
 					}
-				else{
-					text="You pressed cancel"
-				}
-				document.getElementById("Submit"),innerHTML=text;
-				}
+					document.getElementById("Submit"),innerHTML=text;
+					}
 		    </script>
-		  </form>
-		</div>
+		  </div>
+		</form></div>
 	</body>
 </html>

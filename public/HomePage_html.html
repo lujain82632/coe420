@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="html">
+<html class="bg-color">
 
   <head>
     <meta charset="utf-8">
@@ -12,31 +12,34 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
   </head>
   
-  <body>
-  	  <!-- navigation bar -->
+  <body class="bg-color">
+  	  <!-- Navigation bar -->
 	  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-	  <h2><a class="navbar-brand" href="#">Author's Attic</a></h2>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="navbarNav">
-	    <ul class="navbar-nav">
-	      <li class="nav-item active">
-	        <a class="nav-link" href="HomePage_html.html">Home<span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="form_html.html">Contact Us</a>
-	      </li>
-	      <li>
-		   	<div class="btn-group" role="group" aria-label="Basic example" >
-			    <button class="btn btn-secondary" onclick="increaseSize()" >Increase Font Size</button>
-		        <button class="btn btn-secondary" onclick="resetSize()">Reset Font Size</button>
-		        <button class="btn btn-secondary" onclick="fontType()">Change Font Type</button>
-		        <button class="btn btn-secondary" onclick="darkMode()">Dark mode</button>
-	        </div>
-	     </li>
-	    </ul>
-	  </div>
+		  <h2><a class="navbar-brand" href="#">Author's Attic</a></h2>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  
+		  <div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="HomePage_html.html">Home<span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="form_html.html">Contact</a>
+		      </li>
+		    </ul>
+		  </div>
+		    
+		  <ul class="nav justify-content-end">
+		   	<li class="nav-item"><div class="btn-group" role="group" aria-label="Basic example">
+			    <button class="btn btn-secondary" id="btn-group-custom" onclick="increaseSize()">Increase Font Size</button>
+		        <button class="btn btn-secondary" id="btn-group-custom" onclick="resetSize()">Reset Font Size</button>
+		        <button class="btn btn-secondary" id="btn-group-custom" onclick="fontType()">Change Font Type</button>
+		        <button class="btn btn-secondary" id="btn-group-custom" onclick="darkMode()">Dark mode</button>
+		       </div></li>
+		    </li>
+		  </ul>
 	  </nav>
   	
   	<!-- Carousel -->
@@ -59,36 +62,62 @@
 		    
 		    <!-- Isra -->
 		    <div class="carousel-item">
-			    <div class="jumbotron meet-jumbotron" style="color: white;">
+			    <div class="jumbotron bg-transparent meet-jumbotron">
+			    
+		    	<div class="row">
+		    	  <div class="col-1"></div>
+				  <div class="col-8">
 					<h1 class="display-4">Meet Isra</h1>
-					<p class="lead">Isra is a 20 year old AUS student, studying <b>Computer Science</b> with a minor in Data Science.<br>
+					<p class="lead">Isra is a 20 year old AUS student, studying <b>Computer Science</b> with a minor in Data Science.
 			        Her interests include:
 				      <ul>
 				        <li>Fantasy books</li>
 				        <li>Baking cookies. Yum!</li>
 				        <li>Hiking</li>
 				      </ul></p>
-					  <hr class="my-4">
-					  <p class="link"> You can find Isra on <a href="https://www.linkedin.com/in/isra-hasan-8a41601ba/">LinkedIn</a>
-				      and <a href="https://www.instagram.com/isra_hasan_/">Instagram</a></p> 
+				  </div>
+				   
+				  <div class="col-3">
+			      	<img src="isra.jpeg" id="personal-img">
+			      </div>
 				</div>
+					
+				<div class="carousel-caption d-none d-md-block">
+				    <p class="link">You can find Isra on <a href="https://www.linkedin.com/in/isra-hasan-8a41601ba/">LinkedIn</a> and 
+				    <a href="https://www.instagram.com/isra_hasan_/">Instagram</a></p> 					
+		        </div>
+		        
+			    </div>
 		    </div>
 		    
 		    <!-- Lujain -->
 		    <div class="carousel-item">
-		    	<div class="jumbotron meet-jumbotron" style="color: white;">
-				  <h1 class="display-4">Meet Lujain</h1>
-				  <p class="lead">Lujain is a 19 year old AUS student, double majoring in <b>Mathematics & Computer Science</b>, with a minor in Data Science.<br>
-				  Her interests include:
-			      <ul>
-			        <li>History</li>
-        			<li>Books (mainly anything Isra recommends)</li>
-        			<li>Sunsets</li>
-			      </ul></p>
-				  <hr class="my-4">
+		    	<div class="jumbotron  bg-transparent meet-jumbotron">
+		    	
+		    	<div class="row">
+		    	  <div class="col-1"></div>
+		    	  <div class="col-8">
+					  <h1 class="display-4">Meet Lujain</h1>
+					  <p class="lead">Lujain is a 19 year old AUS student, double majoring in <b>Mathematics & Computer Science</b>.
+					  Her interests include:
+				      <ul>
+				        <li>History</li>
+	        			<li>Books (mainly anything Isra recommends)</li>
+	        			<li>Sunsets</li>
+				      </ul></p>
+				  </div>
+				  
+				  <div class="col-3">
+			      	<span class="align-middle"><img src="lujain.jpg" id="personal-img"></span>
+			      </div>
+			    </div>
+			    
+			    <div class="carousel-caption d-none d-md-block">
 				  <p class="link"> You can find Lujain on <a href="https://www.linkedin.com/in/lujain-khalil-6784b2227/">LinkedIn</a>
 			      and <a href="https://www.instagram.com/lujainkhalil_/">Instagram</a></p>
-				</div>
+			    </div>
+			    
+			  </div>
 		   </div>
 		</div>
 		
@@ -105,63 +134,60 @@
 	</div>
 	
 	<!-- Cards -->
-	<div class="row row-cols-1 row-cols-md-4 g-4">
-	<!-- style="width:20rem; height:20rem;" -->
-	<div class="col">
-	<div class="card h-100">
-	  <img class="card-img-top" src="acotar.png" alt="Card image cap">
-	  <div class="card-body">
-	    <h4 class="card-title">A Court of Thorns and Roses</h4>
-	    <p class="card-text">The story of Feyre  and how her life changes when she is imprisoned in the kingdom of her enemy, much to her shock and despair.</p>
- 	  </div>
- 	  <div class="card-footer">
- 	   	<a href="https://www.amazon.ae/s?k=a+court+of+thorns+and+roses&crid=337L5E6JLLDV5&sprefix=a+cou%2Caps%2C174&ref=nb_sb_ss_ts-doa-p_1_5" class="btn btn-primary" id="btn-buy-me">Buy Me!</a>
- 	  </div>
-	</div></div>
-	
-	<div class="col">
-	<div class="card h-100">
-	  <img class="card-img-top" src="hunt.jpeg" alt="Card image cap">
-	  <div class="card-body">
-	    <h4 class="card-title">We Hunt the Flame</h4>
-	    <p class="card-text">The story of a hunter who disguises herself as a man in order to travel into a dangerous forest and restore magic to her people.</p>
- 	  </div>
- 	  <div class="card-footer">
- 	    <a href="https://www.amazon.ae/s?k=we+hunt+the+flame&crid=2RTJEV8DT8V9O&sprefix=we+hunt+the+flame%2Caps%2C178&ref=nb_sb_noss" class="btn btn-primary" id="btn-buy-me">Buy Me!</a>
- 	  </div>
-	</div></div>
-	
-	<div class="col">
-	<div class="card h-100">
-	  <img class="card-img-top" src="caraval.jpeg" alt="Card image cap">
-	  <div class="card-body">
-	    <h4 class="card-title">Caraval</h4>
-	    <p class="card-text">Tale of two sisters who escape their ruthless father when they enter the dangerous intrigue of a legendary game. Scarlett has never left the tiny island where she and her beloved sister, Tella, live with their powerful - and cruel - father.</p>
-	  </div>
-	  <div class="card-footer">
-	    <a href="https://www.amazon.ae/s?k=caraval&crid=59R272RJ8YKO&sprefix=caraval%2Caps%2C188&ref=nb_sb_noss" class="btn btn-primary" id="btn-buy-me">Buy Me!</a>
- 	  </div>
-	</div></div>
-	
-	<div class="col">
-	<div class="card h-100">
-	  <img class="card-img-top" src="crows.jpg" alt="Card image cap">
-	  <div class="card-body">
-	    <h4 class="card-title">Six of Crows</h4>
-	    <p class="card-text">The story of Kaz Brekker and his crew, attempting to pull off an impossible heist.</p>
- 	  </div>
- 	  <div class="card-footer">
-	    <a href="https://www.amazon.ae/s?k=six+of+crows&crid=29U4XJIW1NL0C&sprefix=six+of+crows%2Caps%2C200&ref=nb_sb_noss" class="btn btn-primary" id="btn-buy-me">Buy Me!</a>
-	  </div>
-	</div></div>
-	
+	<div class="row card-row row-cols-1 row-cols-md-4 g-4">
+		<div class="col">
+		<div class="card h-100">
+		  <img class="card-img-top" src="acotar.png" alt="Card image cap">
+		  <div class="card-body">
+		    <h4 class="card-title">A Court of Thorns and Roses</h4>
+		    <p class="card-text">The story of Feyre  and how her life changes when she is imprisoned in the kingdom of her enemy, much to her shock and despair.</p>
+	 	  </div>
+	 	  <div class="card-footer">
+	 	   	<a href="https://www.amazon.ae/s?k=a+court+of+thorns+and+roses&crid=337L5E6JLLDV5&sprefix=a+cou%2Caps%2C174&ref=nb_sb_ss_ts-doa-p_1_5" class="btn btn-primary" id="btn-custom">Buy Me!</a>
+	 	  </div>
+		</div></div>
+		
+		<div class="col">
+		<div class="card h-100">
+		  <img class="card-img-top" src="hunt.jpeg" alt="Card image cap">
+		  <div class="card-body">
+		    <h4 class="card-title">We Hunt the Flame</h4>
+		    <p class="card-text">The story of a hunter who disguises herself as a man in order to travel into a dangerous forest and restore magic to her people.</p>
+	 	  </div>
+	 	  <div class="card-footer">
+	 	    <a href="https://www.amazon.ae/s?k=we+hunt+the+flame&crid=2RTJEV8DT8V9O&sprefix=we+hunt+the+flame%2Caps%2C178&ref=nb_sb_noss" class="btn btn-primary" id="btn-custom">Buy Me!</a>
+	 	  </div>
+		</div></div>
+		
+		<div class="col">
+		<div class="card h-100">
+		  <img class="card-img-top" src="caraval.jpeg" alt="Card image cap">
+		  <div class="card-body">
+		    <h4 class="card-title">Caraval</h4>
+		    <p class="card-text">Tale of two sisters who escape their ruthless father when they enter the dangerous intrigue of a legendary game. Scarlett has never left the tiny island where she and her beloved sister, Tella, live with their powerful - and cruel - father.</p>
+		  </div>
+		  <div class="card-footer">
+		    <a href="https://www.amazon.ae/s?k=caraval&crid=59R272RJ8YKO&sprefix=caraval%2Caps%2C188&ref=nb_sb_noss" class="btn btn-primary" id="btn-custom">Buy Me!</a>
+	 	  </div>
+		</div></div>
+		
+		<div class="col">
+		<div class="card h-100">
+		  <img class="card-img-top" src="crows.jpg" alt="Card image cap">
+		  <div class="card-body">
+		    <h4 class="card-title">Six of Crows</h4>
+		    <p class="card-text">The story of Kaz Brekker and his crew, attempting to pull off an impossible heist.</p>
+	 	  </div>
+	 	  <div class="card-footer">
+		    <a href="https://www.amazon.ae/s?k=six+of+crows&crid=29U4XJIW1NL0C&sprefix=six+of+crows%2Caps%2C200&ref=nb_sb_noss" class="btn btn-primary" id="btn-custom">Buy Me!</a>
+		  </div>
+		</div></div>
 	</div>
-<!--  
+
      <footer>
       <a href="https://www.aus.edu/">American University of Sharjah</a>
       © Isra Hasan and Lujain Khalil 
     </footer>
     
- -->   
   </body>
 </html>
