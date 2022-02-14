@@ -13,7 +13,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
   </head>
   
-  <body class="bg-color">
+  <body class="bg-color" id="body-class">
   	  <!-- Navigation bar -->
 	  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
 		  <h2><a class="navbar-brand" href="#">Author's Attic</a></h2>
@@ -36,7 +36,7 @@
 		   	<li class="nav-item"><div class="btn-group" role="group" aria-label="Basic example">
 			    <button class="btn btn-secondary" id="btn-group-custom" onclick="increaseSize()">Increase Font Size</button>
 		        <button class="btn btn-secondary" id="btn-group-custom" onclick="resetSize()">Reset Font Size</button>
-		        <button class="btn btn-secondary" id="btn-group-custom" onclick="fontType()">Change Font Type</button>
+		        <button class="btn btn-secondary" id="btn-group-custom" onclick="fontType() ">Change Font Type</button>
 		        <button class="btn btn-secondary" id="btn-group-custom" onclick="darkMode()">Dark mode</button>
 		        
 		       </div></li>
@@ -57,8 +57,8 @@
 		  	<div class="carousel-item active">
 		      <img class="d-block w-100" src="map.jpeg" alt="First slide">
 		      <div class="carousel-caption d-none d-md-block">
-		        <h1 class="white-font">Welcome to Author's Attic</h1>
-		        <h3 class="white-font">A collection of Isra and Lujain's top book recommendations</h3>
+		        <h1 class="white-font" id="text1">Welcome to Author's Attic</h1>
+		        <h3 class="white-font" id="text1">A collection of Isra and Lujain's top book recommendations</h3>
       		  </div>
 		    </div>
 		    
@@ -69,8 +69,8 @@
 		    	<div class="row">
 		    	  <div class="col-1"></div>
 				  <div class="col-8">
-					<h1 class="display-4">Meet Isra</h1>
-					<p class="lead">Isra is a 20 year old AUS student, studying <b>Computer Science</b> with a minor in Data Science.
+					<h1 class="display-4" id="text1">Meet Isra</h1>
+					<p class="lead" id="text1">Isra is a 20 year old AUS student, studying <b>Computer Science</b> with a minor in Data Science.
 			        Her interests include:
 				      <ul>
 				        <li>Fantasy books</li>
@@ -85,7 +85,7 @@
 				</div>
 					
 				<div class="carousel-caption d-none d-md-block">
-				    <p class="link">You can find Isra on <a href="https://www.linkedin.com/in/isra-hasan-8a41601ba/">LinkedIn</a> and 
+				    <p class="link" id="text1">You can find Isra on <a href="https://www.linkedin.com/in/isra-hasan-8a41601ba/">LinkedIn</a> and 
 				    <a href="https://www.instagram.com/isra_hasan_/">Instagram</a></p> 					
 		        </div>
 		        
@@ -99,8 +99,8 @@
 		    	<div class="row">
 		    	  <div class="col-1"></div>
 		    	  <div class="col-8">
-					  <h1 class="display-4">Meet Lujain</h1>
-					  <p class="lead">Lujain is a 19 year old AUS student, double majoring in <b>Mathematics & Computer Science</b>.
+					  <h1 class="display-4 " id="text1">Meet Lujain</h1>
+					  <p class="lead" id="text1">Lujain is a 19 year old AUS student, double majoring in <b>Mathematics & Computer Science</b>.
 					  Her interests include:
 				      <ul>
 				        <li>History</li>
@@ -115,7 +115,7 @@
 			    </div>
 			    
 			    <div class="carousel-caption d-none d-md-block">
-				  <p class="link"> You can find Lujain on <a href="https://www.linkedin.com/in/lujain-khalil-6784b2227/">LinkedIn</a>
+				  <p class="link" id="text1"> You can find Lujain on <a href="https://www.linkedin.com/in/lujain-khalil-6784b2227/">LinkedIn</a>
 			      and <a href="https://www.instagram.com/lujainkhalil_/">Instagram</a></p>
 			    </div>
 			    
