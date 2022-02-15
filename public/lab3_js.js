@@ -32,6 +32,16 @@ function resetSize(){
 	      p[i].style.fontSize = "inherit";
 	   }
 }
+
+function fontType() {
+  var fon = document.getElementByTagName('div');
+  if (fon.className == "Georgia") {
+    fon.className = 'roman';
+  } else {
+    fon.className = 'Georgia';
+  }
+}
+
 /*
 function fontType(){
 	var p = document.getElementsByTagName('body');
@@ -40,13 +50,14 @@ function fontType(){
 	   }
 }
 */
+/*
 function fontType(element){
     element.style.fontFamily="Papyrus";
     for(var i=0; i < element.children.length; i++){
         changeFont(element.children[i]);
     }
 }
-
+*/
 
 function darkMode(){
 	var element = document.body;

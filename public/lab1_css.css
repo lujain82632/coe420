@@ -5,9 +5,6 @@ body {
   font-family: Georgia, Serif;
   color: black;
 }
-h1, h2, h3, h4, h5, ul, p, li, a {
-  font-family: Georgia, Serif;
-}
 .bg-color {
   background-color: #DFD3C3;
 }
@@ -36,9 +33,11 @@ h1, h2, h3, h4, h5, ul, p, li, a {
 /* Navigation bar */
 .navbar-custom {
   background-color: #A68DAD;
+  font-family: Georgia, Serif;
 }
 .navbar-brand {
   font-weight: bold;
+  font-family: Georgia, Serif;
 }
 
 /* Carousel */
@@ -46,6 +45,7 @@ h1, h2, h3, h4, h5, ul, p, li, a {
   height: 400px;
   background: url(meet-books.jpg);
   background-size: cover;
+  font-family: Georgia, Serif;
 }
 #personal-img {
   width: 200px;
@@ -62,15 +62,17 @@ h1, h2, h3, h4, h5, ul, p, li, a {
 }
 
 /* Jumbotron */
-.contact-jumbotron {
+.jumbotron {
   color: white;
+  font-family: Georgia, Serif;
+}
+.contact-jumbotron {
   text-align: center;
   height: 250px;
   background: url(contact-books.jpg);
   background-size: cover;
 }
 .meet-jumbotron {
-  color: white;
   margin: 16px;
 }
 .link {
@@ -107,7 +109,6 @@ h1, h2, h3, h4, h5, ul, p, li, a {
 
 .dark{
   background-color: black;
-  color: white;	
 }
 
 footer{
@@ -115,10 +116,5 @@ footer{
   font-size: 15px;  
   text-align:right;  
   padding: 10px;
-  background-color: #C7B198;
-  color: white;
+  color: black;
 }
-
-
-
-
